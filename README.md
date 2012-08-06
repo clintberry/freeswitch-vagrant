@@ -3,14 +3,14 @@ FreeSWITCH Vagrant Box
 
 A quick and easy FreeSWITCH box for playing/hacking on. 
 
-This uses Vagrant to spin up a local virtual machine and will install FreeSWITCH for you automatically on the vm. 
+This uses [Vagrant](http://www.vagrantup.com) to spin up a local virtual machine and will install FreeSWITCH for you automatically on the vm. 
 
 Installation
 ------------
 
 1. Install [Virtual Box](https://www.virtualbox.org/) - a cross platform virtual machine program by Oracle
 
-2. Install [Vagrant](http://www.vagrantup.com>) - a virtual machine provisioner making it easier than ever to automate virtual machine setups
+2. Install [Vagrant](http://www.vagrantup.com) - a virtual machine provisioner making it easier than ever to automate virtual machine setups
 
 3. Check out/download the code...
 
