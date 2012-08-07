@@ -14,7 +14,7 @@ Installation
 
 3. Check out/download the code...
 
-4. In your terminal, go to the code directory and type: `vagrant up` (FYI - on first usage this takes some time to download and then install FreeSWITCH)
+4. In your terminal, go to the code directory and type: `vagrant up` (FYI - on first usage this takes a LONG TIME time to download and then install FreeSWITCH. Go grab some lunch... and maybe dinner. FreeSWITCH takes a while to install. :-)
 
 That is all! You now have FreeSWITCH running in a virtual machine on your local box.
 
