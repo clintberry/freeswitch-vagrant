@@ -20,7 +20,8 @@ This uses [Vagrant](http://www.vagrantup.com) to spin up a local virtual machine
 
 1. When it finishes, type `vagrant ssh` to get to the terminal of your new virtual machine
 
-1. Copy the vanilla config into the FreeSWITCH configuration folder: `sudo cp -a /usr/share/freeswitch/conf/vanilla /etc/freeswitch`
+1. Copy the vanilla config into the FreeSWITCH configuration folder: 
+`sudo cp -a /usr/share/freeswitch/conf/vanilla /etc/freeswitch`
 
 1. Type `sudo service freeswitch start`
 
