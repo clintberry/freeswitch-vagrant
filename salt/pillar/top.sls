@@ -1,0 +1,4 @@
+base:
+  '*':
+    - rabbitmq
+    - mysql

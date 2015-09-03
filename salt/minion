@@ -154,7 +154,7 @@ file_client: local
 # Default:
 file_roots:
   base:
-    - /srv/salt/salt
+    - /srv/salt/
 
 # The hash_type is the hash to use when discovering the hash of a file in
 # the minion directory, the default is md5, but sha1, sha224, sha256, sha384
@@ -164,9 +164,9 @@ file_roots:
 # The Salt pillar is searched for locally if file_client is set to local. If
 # this is the case, and pillar data is defined, then the pillar_roots need to
 # also be configured on the minion:
-#pillar_roots:
-#  base:
-#    - /srv/pillar
+pillar_roots:
+  base:
+    - /srv/pillar
 
 ######        Security settings       #####
 ###########################################

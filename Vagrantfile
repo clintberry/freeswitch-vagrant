@@ -9,23 +9,25 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "inflection/ubuntu-1404-salt"
 
   config.vm.provider "virtualbox" do |vb|
-    vb.customize ["modifyvm", :id, "--memory", "2048"]
+    vb.customize ["modifyvm", :id, "--memory", "512"]
     vb.name = "freeswitch"
   end
 
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
-  config.vm.network "private_network", ip: "12.0.0.2"
+  # config.vm.network "private_network", ip: "12.0.0.2"
 
   # Bridged networks make the machine appear as another physical device on
   # your network.
-  # config.vm.network "public_network"
+  config.vm.network "public_network"
 
-  config.vm.synced_folder "salt/roots", "/srv/salt/"
+  config.vm.synced_folder "salt/roots/freeswitch/", "/srv/salt/"
+  # config.vm.synced_folder "freeswitch", "/etc/freeswitch"
 
   config.vm.provision :salt do |salt|
     salt.minion_config = "salt/minion"
+    salt.bootstrap_options = "-F -c /tmp -P"
     salt.run_highstate = true
     salt.pillar({
       "freeswitch" => {
