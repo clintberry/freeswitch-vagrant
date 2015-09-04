@@ -16,11 +16,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
-  # config.vm.network "private_network", ip: "12.0.0.2"
+  config.vm.network "private_network", ip: "12.0.0.2"
 
   # Bridged networks make the machine appear as another physical device on
   # your network.
-  config.vm.network "public_network"
+  #config.vm.network "public_network"
 
   config.vm.synced_folder "salt/roots/freeswitch/", "/srv/salt/"
   config.vm.synced_folder "freeswitch", "/etc/freeswitch"
