@@ -23,7 +23,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network "public_network"
 
   config.vm.synced_folder "salt/roots/freeswitch/", "/srv/salt/"
-  # config.vm.synced_folder "freeswitch", "/etc/freeswitch"
+  config.vm.synced_folder "freeswitch", "/etc/freeswitch"
 
   config.vm.provision :salt do |salt|
     salt.minion_config = "salt/minion"
