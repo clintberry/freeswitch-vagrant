@@ -6,7 +6,7 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # This box is Ubuntu 14.04 LTS with Salt pre-installed
-  config.vm.box = "inflection/ubuntu-1404-salt"
+  config.vm.box = "rubicon/ubuntu1404-salt"
 
   config.vm.provider "virtualbox" do |vb|
     vb.customize ["modifyvm", :id, "--memory", "512"]
